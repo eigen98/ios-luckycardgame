@@ -30,6 +30,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         layout()
         attribute()
+        printCardClassResult()
+       
     }
     
     //MARK: 뷰 레이아웃
@@ -169,5 +171,22 @@ class ViewController: UIViewController {
         labelE.text = "E"
        
     }
+}
+
+extension ViewController{
+    
+    //럭키 카드 클래스 구현하기 결과 출력 함수
+    func printCardClassResult(){
+        let allCards = Deck()
+        allCards.shuffle()
+        var cardList = [String]()
+        for _ in 0...20{
+            if let topCard = allCards.deal(){
+                cardList.append("\(topCard.type.icon)\(String(format: "%02d", topCard.number))")
+            }
+        }
+        print(cardList.joined(separator: ", "))
+    }
+    
 }
 

@@ -18,6 +18,11 @@
 		5F7E59402A53CA0900E187C0 /* LuckyCardGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7E593F2A53CA0900E187C0 /* LuckyCardGameUITestsLaunchTests.swift */; };
 		5F7E594E2A53F5A900E187C0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7E594D2A53F5A900E187C0 /* Colors.swift */; };
 		5F7E59512A53F61E00E187C0 /* UIColors+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7E59502A53F61E00E187C0 /* UIColors+Extension.swift */; };
+		5FCA832F2A54FECE002F9A2D /* LuckyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA832E2A54FECE002F9A2D /* LuckyCard.swift */; };
+		5FCA83312A550251002F9A2D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA83302A550251002F9A2D /* Card.swift */; };
+		5FCA83332A55026A002F9A2D /* CardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA83322A55026A002F9A2D /* CardType.swift */; };
+		5FCA83352A550702002F9A2D /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA83342A550702002F9A2D /* Deck.swift */; };
+		5FCA83372A5508B1002F9A2D /* CardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA83362A5508B1002F9A2D /* CardFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		5F7E593F2A53CA0900E187C0 /* LuckyCardGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyCardGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5F7E594D2A53F5A900E187C0 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		5F7E59502A53F61E00E187C0 /* UIColors+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColors+Extension.swift"; sourceTree = "<group>"; };
+		5FCA832E2A54FECE002F9A2D /* LuckyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyCard.swift; sourceTree = "<group>"; };
+		5FCA83302A550251002F9A2D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		5FCA83322A55026A002F9A2D /* CardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardType.swift; sourceTree = "<group>"; };
+		5FCA83342A550702002F9A2D /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		5FCA83362A5508B1002F9A2D /* CardFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +113,7 @@
 		5F7E591B2A53CA0800E187C0 /* LuckyCardGame */ = {
 			isa = PBXGroup;
 			children = (
+				5FCA832D2A54FEA3002F9A2D /* Entity */,
 				5F7E594F2A53F60B00E187C0 /* Extension */,
 				5F7E594C2A53F59E00E187C0 /* Common */,
 				5F7E591C2A53CA0800E187C0 /* AppDelegate.swift */,
@@ -147,6 +158,18 @@
 				5F7E59502A53F61E00E187C0 /* UIColors+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		5FCA832D2A54FEA3002F9A2D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				5FCA832E2A54FECE002F9A2D /* LuckyCard.swift */,
+				5FCA83302A550251002F9A2D /* Card.swift */,
+				5FCA83322A55026A002F9A2D /* CardType.swift */,
+				5FCA83342A550702002F9A2D /* Deck.swift */,
+				5FCA83362A5508B1002F9A2D /* CardFactory.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,10 +303,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FCA83352A550702002F9A2D /* Deck.swift in Sources */,
 				5F7E59212A53CA0800E187C0 /* ViewController.swift in Sources */,
 				5F7E594E2A53F5A900E187C0 /* Colors.swift in Sources */,
+				5FCA83312A550251002F9A2D /* Card.swift in Sources */,
+				5FCA832F2A54FECE002F9A2D /* LuckyCard.swift in Sources */,
 				5F7E59512A53F61E00E187C0 /* UIColors+Extension.swift in Sources */,
+				5FCA83332A55026A002F9A2D /* CardType.swift in Sources */,
 				5F7E591D2A53CA0800E187C0 /* AppDelegate.swift in Sources */,
+				5FCA83372A5508B1002F9A2D /* CardFactory.swift in Sources */,
 				5F7E591F2A53CA0800E187C0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
