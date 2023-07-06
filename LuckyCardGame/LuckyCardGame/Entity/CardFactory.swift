@@ -15,14 +15,14 @@ class CardFactory {
     
     //현재 카드 타입의 종류들을 반환한다.
     static func allTypes() -> [CardType] {
-        return [Dog(), Cat(), Cow()]
+        return Animal.allCases
     }
     
     //새로운 덱을 반환
     static func newDeck() -> [LuckyCard] {
         var cards: [LuckyCard] = []
         for type in allTypes() {
-            for number in 1...12 {
+            for number in CardNumber.allCases{
                 let card = LuckyCard(number: number, type: type)
                 cards.append(card)
             }

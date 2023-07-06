@@ -9,7 +9,7 @@ import Foundation
 
 //플레이어에게 나누어줄 카드를 담당하는 클래스
 class Deck{
-    var cards: [LuckyCard]
+    private var cards: [LuckyCard]
     
     init() {
         cards = CardFactory.newDeck()
@@ -22,13 +22,8 @@ class Deck{
     
     //마지막 카드를 가져옴
     func deal() -> LuckyCard? {
-        if let topCard = cards.popLast(){
-            return topCard
-        }else{
-            print("카드가 없습니다.")
-            return nil
-        }
-        
+        let topCard = cards.popLast()
+        return topCard
     }
     // 덱의 카드 수를 반환
     func count() -> Int {

@@ -18,11 +18,11 @@ class LuckyCard : Card{
     //자체적으로 의미가 있고 .front'와 '.back' 두 가지로 명확하게 제한하여 실수를 방지
     
     
-    let number: Int // 카드 넘버
+    var number: CardNumber // 카드 넘버
     let type: CardType // 카드 종류
     var cardState: CardFace //앞면 뒷면 상태
     
-    init(number: Int, type: CardType) {
+    init(number: CardNumber, type: CardType) {
         self.number = number
         self.type = type
         self.cardState = .back

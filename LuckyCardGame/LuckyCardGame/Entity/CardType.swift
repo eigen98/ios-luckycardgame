@@ -12,14 +12,20 @@ protocol CardType {
 }
 
 
-struct Dog: CardType {
-    let icon = "🐶"
+enum Animal: CardType, CaseIterable {
+    case dog, cat, cow
+
+    var icon: String {
+        switch self {
+        case .dog:
+            return "🐶"
+        case .cat:
+            return "🐱"
+        case .cow:
+            return "🐮"
+        }
+    }
+    
+    
 }
 
-struct Cat: CardType {
-    let icon = "🐱"
-}
-
-struct Cow: CardType {
-    let icon = "🐮"
-}
