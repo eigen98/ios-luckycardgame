@@ -7,7 +7,7 @@
 
 import Foundation
 //카드 객체를 생성하는 클래스
-class CardFactory {
+struct CardFactory {
     
     //MARK: 만든 이유
     // 개임이 시작되었을 때 처음 Deck에서 모든 카드가 생성되는데 Deck은 카드를 관리하는 역할만 수행하므로
@@ -19,15 +19,19 @@ class CardFactory {
     }
     
     //새로운 덱을 반환
-    static func newDeck() -> [LuckyCard] {
+    static func newDeck(mode: GameMode) -> [LuckyCard] {
         var cards: [LuckyCard] = []
         for type in allTypes() {
             for number in CardNumber.allCases{
+                
+                if mode == .threePlayer && number == .twelve{ continue }
+                
                 let card = LuckyCard(number: number, type: type)
                 cards.append(card)
             }
         }
         return cards
     }
+    
     
 }

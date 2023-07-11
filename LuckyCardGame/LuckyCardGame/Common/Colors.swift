@@ -9,4 +9,6 @@ import Foundation
 import UIKit
 final class Colors{
     static let player_container_colors = UIColor.init(hex: "#e5e5e5")
+    static let segment_color = UIColor.init(hex: "#eeeeef")
 }
+

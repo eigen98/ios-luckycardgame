@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F591A8F2A57B445000FB93D /* BottomContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F591A8E2A57B445000FB93D /* BottomContainerView.swift */; };
 		5F64898B2A56436900CFA0FA /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F64898A2A56436900CFA0FA /* Player.swift */; };
 		5F64898E2A5661AC00CFA0FA /* CardContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F64898D2A5661AC00CFA0FA /* CardContainerView.swift */; };
+		5F6489902A56BB3B00CFA0FA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F64898F2A56BB3B00CFA0FA /* CardView.swift */; };
 		5F7E591D2A53CA0800E187C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7E591C2A53CA0800E187C0 /* AppDelegate.swift */; };
 		5F7E591F2A53CA0800E187C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7E591E2A53CA0800E187C0 /* SceneDelegate.swift */; };
 		5F7E59212A53CA0800E187C0 /* GameBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7E59202A53CA0800E187C0 /* GameBoardViewController.swift */; };
@@ -23,8 +25,11 @@
 		5FCA832F2A54FECE002F9A2D /* LuckyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA832E2A54FECE002F9A2D /* LuckyCard.swift */; };
 		5FCA83312A550251002F9A2D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA83302A550251002F9A2D /* Card.swift */; };
 		5FCA83332A55026A002F9A2D /* CardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA83322A55026A002F9A2D /* CardType.swift */; };
-		5FCA83352A550702002F9A2D /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA83342A550702002F9A2D /* Deck.swift */; };
+		5FCA83352A550702002F9A2D /* Dealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA83342A550702002F9A2D /* Dealer.swift */; };
 		5FCA83372A5508B1002F9A2D /* CardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA83362A5508B1002F9A2D /* CardFactory.swift */; };
+		5FE13CFC2A5A21C10018B6D8 /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE13CFB2A5A21C10018B6D8 /* GameService.swift */; };
+		5FE13CFE2A5A45DD0018B6D8 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE13CFD2A5A45DD0018B6D8 /* GameManager.swift */; };
+		5FE13D002A5A46160018B6D8 /* GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE13CFF2A5A46160018B6D8 /* GameMode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F591A8E2A57B445000FB93D /* BottomContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomContainerView.swift; sourceTree = "<group>"; };
 		5F64898A2A56436900CFA0FA /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		5F64898D2A5661AC00CFA0FA /* CardContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContainerView.swift; sourceTree = "<group>"; };
+		5F64898F2A56BB3B00CFA0FA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		5F7E59192A53CA0800E187C0 /* LuckyCardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckyCardGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F7E591C2A53CA0800E187C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F7E591E2A53CA0800E187C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,8 +72,11 @@
 		5FCA832E2A54FECE002F9A2D /* LuckyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyCard.swift; sourceTree = "<group>"; };
 		5FCA83302A550251002F9A2D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		5FCA83322A55026A002F9A2D /* CardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardType.swift; sourceTree = "<group>"; };
-		5FCA83342A550702002F9A2D /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		5FCA83342A550702002F9A2D /* Dealer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dealer.swift; sourceTree = "<group>"; };
 		5FCA83362A5508B1002F9A2D /* CardFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFactory.swift; sourceTree = "<group>"; };
+		5FE13CFB2A5A21C10018B6D8 /* GameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
+		5FE13CFD2A5A45DD0018B6D8 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		5FE13CFF2A5A46160018B6D8 /* GameMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				5F64898D2A5661AC00CFA0FA /* CardContainerView.swift */,
+				5F64898F2A56BB3B00CFA0FA /* CardView.swift */,
+				5F591A8E2A57B445000FB93D /* BottomContainerView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -125,6 +137,7 @@
 		5F7E591B2A53CA0800E187C0 /* LuckyCardGame */ = {
 			isa = PBXGroup;
 			children = (
+				5FE13CFA2A5A21A30018B6D8 /* Service */,
 				5F64898C2A56618D00CFA0FA /* Component */,
 				5FCA832D2A54FEA3002F9A2D /* Entity */,
 				5F7E594F2A53F60B00E187C0 /* Extension */,
@@ -179,11 +192,21 @@
 				5FCA832E2A54FECE002F9A2D /* LuckyCard.swift */,
 				5FCA83302A550251002F9A2D /* Card.swift */,
 				5FCA83322A55026A002F9A2D /* CardType.swift */,
-				5FCA83342A550702002F9A2D /* Deck.swift */,
+				5FCA83342A550702002F9A2D /* Dealer.swift */,
 				5FCA83362A5508B1002F9A2D /* CardFactory.swift */,
 				5F64898A2A56436900CFA0FA /* Player.swift */,
+				5FE13CFD2A5A45DD0018B6D8 /* GameManager.swift */,
+				5FE13CFF2A5A46160018B6D8 /* GameMode.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		5FE13CFA2A5A21A30018B6D8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5FE13CFB2A5A21C10018B6D8 /* GameService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,15 +340,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FE13CFE2A5A45DD0018B6D8 /* GameManager.swift in Sources */,
 				5F64898B2A56436900CFA0FA /* Player.swift in Sources */,
-				5FCA83352A550702002F9A2D /* Deck.swift in Sources */,
+				5FCA83352A550702002F9A2D /* Dealer.swift in Sources */,
 				5F7E59212A53CA0800E187C0 /* GameBoardViewController.swift in Sources */,
 				5F7E594E2A53F5A900E187C0 /* Colors.swift in Sources */,
 				5FCA83312A550251002F9A2D /* Card.swift in Sources */,
 				5FCA832F2A54FECE002F9A2D /* LuckyCard.swift in Sources */,
+				5FE13CFC2A5A21C10018B6D8 /* GameService.swift in Sources */,
+				5F591A8F2A57B445000FB93D /* BottomContainerView.swift in Sources */,
 				5F64898E2A5661AC00CFA0FA /* CardContainerView.swift in Sources */,
+				5F6489902A56BB3B00CFA0FA /* CardView.swift in Sources */,
 				5F7E59512A53F61E00E187C0 /* UIColors+Extension.swift in Sources */,
 				5FCA83332A55026A002F9A2D /* CardType.swift in Sources */,
+				5FE13D002A5A46160018B6D8 /* GameMode.swift in Sources */,
 				5F7E591D2A53CA0800E187C0 /* AppDelegate.swift in Sources */,
 				5FCA83372A5508B1002F9A2D /* CardFactory.swift in Sources */,
 				5F7E591F2A53CA0800E187C0 /* SceneDelegate.swift in Sources */,
