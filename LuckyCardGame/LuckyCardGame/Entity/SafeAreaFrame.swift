@@ -6,3 +6,12 @@
 //
 
 import Foundation
+//SafeArea 크기 정보
+struct SafeAreaFrame {
+    let LEFT_INSET: CGFloat
+    let RIGHT_INSET: CGFloat
+    let TOP_INSET: CGFloat
+    let BOTTOM_INSET: CGFloat
+    let WIDTH: CGFloat
+    let HEIGHT: CGFloat
+}
