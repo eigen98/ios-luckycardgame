@@ -21,6 +21,7 @@ class BottomContainerView : UIView{
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+        configureViewAttributes()
     }
     
     //View Attribute 초기화
