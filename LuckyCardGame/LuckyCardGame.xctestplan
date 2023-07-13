@@ -1,0 +1,46 @@
+{
+  "configurations" : [
+    {
+      "id" : "4F016E97-4BE9-456D-8255-EF0F8017B4A7",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:LuckyCardGame.xcodeproj",
+      "identifier" : "5F7E59182A53CA0800E187C0",
+      "name" : "LuckyCardGame"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:LuckyCardGame.xcodeproj",
+        "identifier" : "5F7E592E2A53CA0900E187C0",
+        "name" : "LuckyCardGameTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:LuckyCardGame.xcodeproj",
+        "identifier" : "5F7E59382A53CA0900E187C0",
+        "name" : "LuckyCardGameUITests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:LuckyCardGame.xcodeproj",
+        "identifier" : "5FE0C6722A5D26F90088391D",
+        "name" : "LuckyGameTests"
+      }
+    }
+  ],
+  "version" : 1
+}

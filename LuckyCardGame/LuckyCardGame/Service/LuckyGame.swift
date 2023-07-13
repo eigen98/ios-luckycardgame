@@ -7,7 +7,7 @@
 
 import Foundation
 
-class GameService {
+class LuckyGame {
     
     var gameManager: GameManager
     
@@ -25,6 +25,7 @@ class GameService {
         gameManager.initializePlayersAccordingToMode(mode: mode)
         gameManager.prepareDealer(mode: mode)
         gameManager.distributeCards()
+        
     }
     
     //게임 모드 변경.
