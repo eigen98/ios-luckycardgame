@@ -1,5 +1,5 @@
 //
-//  GameService.swift
+//  LuckyGame.swift
 //  LuckyCardGame
 //
 //  Created by KoJeongMin  on 2023/07/09.
@@ -49,10 +49,6 @@ class LuckyGame {
     
     func getMode() -> GameMode{
         return gameManager.getMode()
-    }
-    
-    func setMode(mode : GameMode){
-        gameManager.setMode(mode: mode)
     }
     
     
