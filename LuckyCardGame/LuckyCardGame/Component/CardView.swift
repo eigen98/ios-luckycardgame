@@ -56,7 +56,7 @@ class CardView : UIView{
     
     required init?(coder: NSCoder) {
             super.init(coder: coder)
-        fatalError("")
+        attribute()
             
     }
     

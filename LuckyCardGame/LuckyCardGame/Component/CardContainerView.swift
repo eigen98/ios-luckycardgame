@@ -32,7 +32,7 @@ class CardContainerView : UIView{
         return label
     }()
     
-    private var name : String = ""
+    var name : String = ""
     
     init(playerName: String) {
         super.init(frame: .zero)
@@ -43,19 +43,10 @@ class CardContainerView : UIView{
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        fatalError("init(coder:) has not been implemented")
+        attribute()
     }
     
-    //카드 덱 컨테이너 뷰 레이아웃 초기화
-    func layout(){
-        self.addSubview(playerNameLabel)
-        playerNameLabel.frame = CGRect(x: ContainerSize.LEFT_INSET,
-                                       y: 0,
-                                       width: ContainerSize.LABEL_WIDTH,
-                             height: self.frame.height)
-        
-       
-    }
+    
     
     //UI Property
     private func attribute(){
@@ -69,8 +60,19 @@ class CardContainerView : UIView{
     
 }
 
-//MARK: 카드 배치 로직
+//MARK: 레이아웃 초기화
 extension CardContainerView{
+    
+    //카드 덱 컨테이너 뷰 레이아웃 초기화
+    func layoutPlayerNameView(){
+        self.addSubview(playerNameLabel)
+        playerNameLabel.frame = CGRect(x: ContainerSize.LEFT_INSET,
+                                       y: 0,
+                                       width: ContainerSize.LABEL_WIDTH,
+                             height: self.frame.height)
+        
+       
+    }
    
     //카드뷰 레이아웃 초기화.
     func layoutCardViews(cards : [Card], isFront: Bool){
